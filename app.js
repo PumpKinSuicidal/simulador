@@ -38,4 +38,39 @@ function sw(receive) {
         document.getElementById('lamp').src = "img/off.jpg"
     }
 
+    if(receive === 4 && sw1 === false){
+        document.getElementById('sw1').src = "img/swon.png"
+        sw1 = true
+        if (quebrado === 0){
+        document.getElementById('lamp').src = "img/on.jpg"
+        }
+    }   else if(receive === 4 && sw1 === true) {
+        document.getElementById('sw1').src = "img/swoff.png"
+        sw1 = false
+    }
+        if(receive === 5 && sw2 === false){
+        document.getElementById('sw2').src = "img/swon.png"
+        sw2 = true
+        if (quebrado === 0){
+            document.getElementById('lamp').src = "img/on.jpg"
+            }
+    }   else if(receive === 5 && sw2 === true) {
+        document.getElementById('sw2').src = "img/swoff.png"
+        sw2 = false
+    }
+
+    if(receive === 6 && sw1 === false){
+        document.getElementById('sw1').src = "img/swon.png"
+        sw1 = true
+        if (quebrado === 0){
+        document.getElementById('lamp').src = "img/off.jpg"
+        }
+    } else if (receive === 6 && sw1 === true){
+        document.getElementById('sw1').src = "img/swoff.png"
+        sw1 = false
+        if (quebrado === 0){
+            document.getElementById('lamp').src = "img/on.jpg"
+            }
+    }
+
 }
